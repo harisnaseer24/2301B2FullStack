@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "scIGnfFa9nBA51uI0JbzRBSFOduvO7IaCm5OVo9tguA73RVmmDTNMG+lYzki+gP5qFb8ypLbAxe7Dv8Krc4OZw==",
+  "dgSpecHash": "mqKve1W5KG01JVWauIaNw9EtOlp2gSaPh2XkCm/MD0N7TfpKXhEG8Ry+ipQoq07eIsai+GmpDEKSAAFvuHUwhg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\asp\\Desktop\\full stack\\2301B2WebAPIs-main\\2301B2WebApi\\2301B2WebApi.csproj",
+  "projectFilePath": "C:\\Users\\asp\\Desktop\\full stack\\2301b2 fullstack\\2301B2WebAPIs-main\\2301B2WebApi\\2301B2WebApi.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\asp\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\asp\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

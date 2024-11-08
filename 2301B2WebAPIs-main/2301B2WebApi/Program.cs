@@ -10,7 +10,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowSpecificOrigin",
-        builder => builder.WithOrigins("http://localhost:4209") // No trailing slash
+        builder => builder.WithOrigins("http://localhost:4200") // No trailing slash
                           .AllowAnyHeader()
                           .AllowAnyMethod());
 });

@@ -41,7 +41,7 @@
                   <td>{{item.expiry}}</td>
                   <td>{{item.company.name}}</td>
                   <td>
-<button class="btn btn-sm btn-primary mx-2" (click)="EditMedicine(item)">Edit</button>
+<button class="btn btn-sm btn-primary mx-2" [routerLink]="['/editMedicine', item.id]">Edit</button>
 <button class="btn btn-sm btn-danger mx-2"  (click)="DeleteMedicine(item)">Delete</button>
 
                   </td>

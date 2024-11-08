@@ -1,11 +1,12 @@
 import { TitleCasePipe, UpperCasePipe } from '@angular/common';
 import { HttpClient } from '@angular/common/http';
 import { Component } from '@angular/core';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-medicine',
   standalone: true,
-  imports: [UpperCasePipe, TitleCasePipe],
+  imports: [UpperCasePipe, TitleCasePipe, RouterLink],
   templateUrl: './medicine.component.html',
   styleUrl: './medicine.component.css'
 })

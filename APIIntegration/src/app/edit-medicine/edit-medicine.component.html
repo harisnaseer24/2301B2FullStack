@@ -1,0 +1,22 @@
+<div class="container">
+    <h1 class="text-primary display-3 text-center">Enter Medicine Details</h1>
+    <form action="">
+        <input type="hidden" [(ngModel)]="medicine.id" name="id" class="form-control my-3" placeholder="id"/>
+        <input type="text" [(ngModel)]="medicine.name" name="name" class="form-control my-3" placeholder="name"/>
+        <input type="text" [(ngModel)]="medicine.description" name="description" class="form-control my-3" placeholder="description"/>
+        <input type="number" [(ngModel)]="medicine.price" name="price"class="form-control my-3" placeholder="price"/>
+        <input type="date" [(ngModel)]="medicine.expiry" name="expiry" class="form-control my-3"placeholder="expiry"/>
+        <input type="text"[(ngModel)]="medicine.formula" name="formula" class="form-control my-3"placeholder="formula"/>
+        <input type="text" [(ngModel)]="medicine.power" name="power"class="form-control my-3"placeholder="power"/>
+
+        <select class="form-control my-3" [(ngModel)]="medicine.companyId" name="companyId" placeholder="company">
+        
+            <option value="Choose company"  selected disabled>Choose company</option>
+                @for(company of companies; track $index ){
+                <option value="{{company.id}}">{{company.name}}</option>
+            }
+        </select>
+      
+        <input type="button" value="Save changes" (click)="EditMedicine(medicine)" class="form-control btn btn-primary">
+    </form>
+</div>

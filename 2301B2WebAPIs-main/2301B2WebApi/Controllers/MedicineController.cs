@@ -54,7 +54,24 @@ namespace _2301B2WebApi.Controllers
         //    return Ok(AvailableMedicines);
         //}
 
+        [HttpGet("Details/{id}")]
+        public IActionResult GetMedicines(int id)
+        {
 
+            var AvailableMedicines = _context.Medicines.Include(x => x.Company).FirstOrDefault(x=>x.Id==id);
+            return Ok(AvailableMedicines);
+        }
+
+
+
+        [HttpPut]
+        public IActionResult UpdateMedicines(Medicine med)
+        {
+
+            var editedMed = _context.Medicines.Update(med);
+            _context.SaveChanges();
+            return Ok(editedMed.Entity);
+        }
 
 
         [HttpGet ("{PageNo}/{PageSize}")]
